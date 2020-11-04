@@ -1,0 +1,171 @@
+*{margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+/*----------------------------------------------*/
+/*------------------ GENERICOS -----------------*/
+/*----------------------------------------------*/
+body{margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif;}
+h1,h2,h3,h4,h5,h6{margin:0;}
+p{padding:0; margin:0;color: white}
+ul, li{list-style:none;	padding:0; margin:0;}
+a{color:inherit;}
+/*--------------- FIN GENERICOS ----------------*/
+
+/* ------------------------------------- BODY ------------------------------------ */
+html,body{height: 100%; width: 100%;background: black;}
+/*------------------------------------ HEADER1 ----------------------------------- */
+.header1{background: rgba(255, 255, 255, 0.911);}
+.header .navbar {
+  background-color: transparent !important;
+}
+/* --------------------------------SOCIAL BAR LATERAL -----------------------------*/
+.barra-social-lateral {position: fixed; right: 0; top: 35%; font-size: 1.5rem; display: flex;
+	           flex-direction: column; align-items: flex-end; z-index: 100;}
+.icon {color: white; text-decoration: none; padding: .7rem; display: flex; transition: all .5s;}
+.icon-facebook {background: #2E406E;}
+.icon-twitter {background: #339DC5;}
+.icon-youtube {background: #E83028;}
+.icon-instagram {background: #3F60A5;}
+.icon:first-child {border-radius: 1rem 0 0 0;}
+.icon:last-child {border-radius: 0 0 0 1rem;}
+.icon:hover {padding-right: 3rem;border-radius: 1rem 0 0 1rem;box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);}
+/* ------------------------------------- NAVBAR ---------------------------------- */
+.caja01 {margin: 0px; background: rgb(0,37,102,1); top: 0px; z-index: 100;}
+.caja01 div[class*='columna-nav'] {padding: 0px; text-align: right; color: white; }
+
+/* cambiar el color de fondo a la barra */
+/* .nav.navbar-nav.navbar-right li a { color: white; }  */
+.nav.navbar-nav.navbar-right li a:hover{background-color: #f39d1a;}
+/* ------------------------------------- IMAGEN ---------------------------------- */
+.caja02 {margin: 0px;}
+.caja02 div[class*='columna-img'] {padding: 0px;  text-align: center; color: white;}
+.caja02 .columna-img img{position: relative; display: inline-block; text-align: center;}
+.caja02 .texto-encima1{position: absolute; top: 20px; left: 45px; color: black; font-size: 45px;}
+.caja02 .texto-encima2{position: absolute; top: 80px; left: 45px; color: black; font-size: 45px;}
+/* -------------------------------------- */
+/* 5 TARJETAS DE LOS PASOS DE LA DONACION */
+/* -------------------------------------- */
+.container{padding:0;}
+.titulo{background: rgba(230,230,230,1.5); color: black; text-align: center;}
+.titulo h2{padding-top: 10px; padding-bottom: 20px;}
+.imagenfrente{width: 100%;}            
+.efecto3d{width: 100%; margin: 0; padding: 0; background: rgba(230,230,230,1.5);
+          display: flex;                    /* Las cajas son flexibles */
+          flex-wrap: wrap;                  /* Si las cajas no entran, bejan */
+          justify-content: space-around;}   /* Le doy espacio alrrededor */
+.efecto2d{width: 100%; margin: 0; padding: 0; background: rgba(230,230,230,1.5);
+          display: flex;                    /* Las cajas son flexibles */
+          flex-wrap: wrap;                  /* Si las cajas no entran, bejan */
+          justify-content: space-around ;}   /* Le doy espacio alrrededor */
+  
+.efectocolumna3{width: 300px; height: 340px; position: relative; margin:0;
+               text-align: center; transform-style: preserve-3d; 
+               transition: .7s ease; box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);} 
+.efectocolumna2{width: 400px; height: 340px; position: relative; margin: 0;
+                text-align: center; transform-style: preserve-3d; 
+                transition: .7s ease; box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);} 
+.contenedor{margin: 10px; perspective: 800;}
+.frente,.atras{position: absolute; width: 100%; height: 100%;
+               backface-visibility: hidden;}
+.atras{background: #dfd197; transform: rotateY(180deg); display: flex; 
+       flex-wrap: wrap; align-items: center;}
+/* Efecto de rotacion cuando el cursor pasa sobre la tarjeta */
+.contenedor:hover .efectocolumna3{transform: rotateY(180deg)}
+.contenedor:hover .efectocolumna2{transform: rotateY(180deg)}
+/* La cara trasera de la tarjeta */
+.textoreverso{font-size: 17px; margin: 4px; font-weight: bold;}
+.textoreverso p{color: black}
+/* ------------------------------------------ */
+/* FIN 5 TARJETAS DE LOS PASOS DE LA DONACION */
+/* ------------------------------------------ */
+/* -------------------------------------*/
+/* ACTIVIDADES QUE REALIZA LA FUNDACION */
+/* -------------------------------------*/
+/* --------------------------------------------------------------------------------------- */
+.contenedoract{display: flex; flex-wrap: wrap; justify-content: space-around;
+                  width: 100%; height: 700px;   margin: 0; padding: 0; background: rgba(255, 255, 255, 0.781);} 
+.contenedoract_tarjeta{width: 350px; height: 570px; margin: 20px; padding: 5px; -webkit-perspective: 800;}
+.carta{height: 100%; width: 100%; position: relative; transform-style: preserve-3d; transition: 1s;
+        transform: rotateX(40deg) scale(0.7);}
+/* .carta:hover{transform: rotateX(0deg) scale(1) translateY(10px);} */
+.frente{background: crimson;}
+.actividadatras{background: rgba(255, 255, 255, 0.507); transform: rotateY(180deg);}
+.actividadatras h2{padding-top: 20px;}
+img{width: 100%; height: 100%;}
+/* ----------------- TEXTOS --------------------*/
+.titulobanco, .titulofundacion{background: rgba(255, 255, 255, 0.78); color: black; text-align: center;}
+.tituloblanco, .titulofundacion h2{background: rgba(230,230,230,1.5); padding-top: 25px; margin-bottom: 0px;}
+.titulobanco, .titulofundacion h3{background: rgba(230,230,230,1.5); padding-top: 5px; padding-bottom: 10px;}
+.titulofundacion{background: rgba(230,230,230,1.7)}
+/*.titulobanco h2{padding-top: 25px; margin-bottom: 0px;} */
+/* .titulobanco h3{padding-top: 5px; padding-bottom: 10px;} */
+.actividadatras h2{left: 50%; right: 50%; text-align: center; color: red; padding-top: 20px;}
+.textoreverso{padding-top: 50;}
+.textoreverso h5{text-align: left; text-indent:80px;}
+.col-6 h3{background: rgba(230, 230, 230, 1.78); padding-left: 0; padding-right: 0;}
+.centrado{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);}
+.texto-encima{position: absolute; top: 10px; left: 10px; font-size: 20px;}
+
+/* -----------------------------------------*/
+/* FIN ACTIVIDADES QUE REALIZA LA FUNDACION */
+/* -----------------------------------------*/
+
+/* -----------------------------------------*/
+/*                 IDENTIDAD                */
+/* -----------------------------------------*/
+.carousel, .carousel-inner, .carousel-inner .item {height: 600px;}
+.carousel-caption {top: 30%; bottom: auto;}
+.heading{font-size: 60px;text-shadow: 2px 2px #ff063d;}
+.sub-heading{font-size: 30px; text-shadow: 2px 2px #ff063d;}
+/* -----------------------------------------*/
+/*               FIN IDENTIDAD              */
+/* -----------------------------------------*/
+
+/* -----------------------------------------*/
+/*           PREGUNTAS FRECUENTES           */
+/* -----------------------------------------*/
+#acordeon12tarjetas{background: white;}
+.titulo4 h2{text-align: center; padding: 10px; margin: 0px 0 !important; font-family: sans-serif;}
+.card,.card-header{background-color: transparent !important;
+                  border: none !important;
+                  padding: 0 !important;
+                  margin-bottom: 20px;}
+.card{box-shadow: 0 2px 20px 0 rgba(110,130,208,0.18);}
+.btn-link{width: 100%; height: 40px; color:#000 !important;
+          font-weight: bold !important; text-align: left !important; text-decoration: none !important;}
+.card-body{background: red; color: white;} /* color de fodo del texto del contenido */
+.btn-link:after{content: "\2212"; width: 35px; font-size: 25px; text-align: center;
+                 border-radius: 5px; right: 15px; top: 11px; position: absolute; background: #e8eeff;}
+.btn-link.collapsed:after{content: "\002B"; }
+.btn-link:before{content:""; height: 25px; width: 25px; position: absolute; 
+                 background: #fff; z-index: 1; transform: rotate(45deg); left: 30px; top: 46px;}
+.imagenpreguntas.img{width: auto; height: auto; margin-top: 15px; }
+/* -----------------------------------------*/
+/*         FIN PREGUNTAS FRECUENTES         */
+/* -----------------------------------------*/
+
+/* -----------------------------------------*/
+/*                 CONTACTO                 */
+/* -----------------------------------------*/
+.contacto{margin-top: 0;padding-top: 0;}
+.contenedorcontacto{margin-top: 0; background: rgba(255, 255, 255, 0.849);}
+.contenedorcontacto .form .formulario-header .formulario-titulo{font-weight: normal; font-family: sans-serif; 
+                          color: red; text-align: center; padding: 14px 0; }
+
+.contenedorcontacto .form .formulario-header .formulario-titulo span{color: #fff}
+
+.contenedorcontacto .form{background: rgba(0,0,0,0.65); width: 90%; max-width: 650px; 
+                          margin: auto; padding-bottom: 5px 35px; margin-top: 30px;
+                          padding-bottom: 10px; border-radius: 3px;}
+
+.contenedorcontacto .form .formulario-label{display: block; margin-left: 20px; color: red; 
+                          font-size: 16px; font-family: Roboto; position: relative;} 
+.contenedorcontacto .form .formulario-label span{color: white}
+.contenedorcontacto .form .form-input, .form-textarea{background: rgba 0,0,0,0.7; border: none;
+                          outline: none; border-bottom: 2px solid; color: #1bff26e0;
+                          width: 90%; padding: 12px; margin-left: 20px; margin-bottom: 20px; 
+                          border-radius: 2px; font-size: 14px; color: black; font-family: Roboto;}
+.contenedorcontacto .form .form-textarea{resize: vertical; max-height: 150px; min-height: 50px;}
+.contenedorcontacto .form .boton-enviar{width: 70%; font-family: Roboto; outline: none;
+                          background: #1bff26e0; font-size: 16px; border: none; color: black;
+                          padding: 15px 0; cursor: pointer; transition: all 2s ease;
+                          margin-left: auto; display: block; margin-right: auto;}
+.contenedorcontacto .form .boton-enviar:hover{background: red;}
