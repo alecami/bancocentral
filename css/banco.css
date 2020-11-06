@@ -169,3 +169,10 @@ img{width: 100%; height: 100%;}
                           padding: 15px 0; cursor: pointer; transition: all 2s ease;
                           margin-left: auto; display: block; margin-right: auto;}
 .contenedorcontacto .form .boton-enviar:hover{background: red;}
+/*------------------------*/
+/* FORMULARIO DE CONTACTO */
+/*------------------------*/
+.izquierda p{color: black; padding-bottom: 20px; font-size: 30px}
+.form-control{font-size: 14px; border: 1px solid #cacaca; padding: 15px; border-radius: 2px; height: auto;}
+textarea.form-control{height: 250px;}
+.form-control:focus{border: 1px #1a1a1a; outline: none; box-shadow: none;}
